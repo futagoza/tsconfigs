@@ -14,5 +14,8 @@
     "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
     "repository": "futagoza/tsconfigs",
     "main": "tsconfig.json",
+    "dependencies": {
+        "@types/node": "8"
+    },
     "license": "MIT"
 }
