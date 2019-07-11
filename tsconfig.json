@@ -1,0 +1,136 @@
+{
+
+    /******************** Project ********************/
+
+    "exclude": [
+        "dist",
+        "node_modules",
+        "out",
+        "temp"
+    ],
+    "include": [
+        "src"
+    ],
+
+    // "compileOnSave": false,
+    // "extends": "",
+    // "files": [],
+    // "references": [],
+    // "typeAcquisition": {},
+
+    "compilerOptions": {
+
+        /******************** Build ********************/
+
+        "composite": false,
+        "module": "commonjs",
+        "target": "es2015",
+
+        // "lib": [],
+        // "noLib": false,
+        // "outDir": "./",
+        // "outFile": "./",
+        // "rootDir": "./",
+
+        /******************** Type checking ********************/
+
+        "strict": true,
+        "suppressImplicitAnyIndexErrors": true,
+
+        // "noImplicitAny": true,
+        // "noImplicitThis": true,
+        // "noStrictGenericChecks": false,
+        // "skipLibCheck": false,
+        // "strictBindCallApply": true,
+        // "strictFunctionTypes": true,
+        // "strictNullChecks": true,
+
+        /******************** Best practices ********************/
+
+        "noFallthroughCasesInSwitch": true,
+
+        // "allowUnreachableCode": false,
+        // "allowUnusedLabels": false,
+        // "forceConsistentCasingInFileNames": false,
+        // "noImplicitReturns": false,
+        // "noUnusedLocals": false,
+        // "noUnusedParameters": false,
+        // "strictPropertyInitialization": true,
+        // "suppressExcessPropertyErrors": false,
+
+        /******************** Module resolution ********************/
+
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+
+        // "allowSyntheticDefaultImports": false,
+        // "allowUmdGlobalAccess": true,
+        // "baseUrl": "./",
+        // "esModuleInterop": false,
+        // "maxNodeModuleJsDepth": 0,
+        // "paths": {},
+        // "preserveSymlinks": false,
+        // "rootDirs": [],
+        // "typeRoots": [],
+        // "types": [],
+
+        /******************** Emit ********************/
+
+        "declaration": true,
+        "declarationMap": true,
+        "importHelpers": true,
+        "newLine": "lf",
+        "noEmitOnError": true,
+        "preserveConstEnums": true,
+        "stripInternal": true,
+
+        // "alwaysStrict": true,
+        // "declarationDir": "./",
+        // "emitBOM": false,
+        // "emitDeclarationOnly": false,
+        // "noEmit": false,
+        // "noEmitHelpers": false,
+        // "noImplicitUseStrict": false,
+        // "noResolve": false,
+        // "removeComments": false,
+
+        /******************** Source map ********************/
+
+        "sourceMap": true,
+
+        // "sourceRoot": "",
+        // "mapRoot": "",
+        // "inlineSourceMap": false,
+        // "inlineSources": false,
+
+        /******************** Compilation ********************/
+
+        "disableSizeLimit": true,
+        "listEmittedFiles": true,
+
+        // "diagnostics": false,
+        // "downlevelIteration": false,
+        // "incremental": false,
+        // "isolatedModules": false,
+        // "listFiles": false,
+        // "noErrorTruncation": false,
+        // "preserveWatchOutput": false,
+        // "pretty": true,
+        // "traceResolution": false,
+        // "tsBuildInfoFile": ".tsbuildinfo",
+
+        /******************** Experimental ********************/
+
+        // "emitDecoratorMetadata": true,
+        // "experimentalDecorators": true,
+
+        /******************** non-TypeScript ********************/
+
+        // "allowJs": false,
+        // "checkJs": false,
+        // "jsx": "preserve",
+        // "jsxFactory": "React.createElement",
+
+    }
+
+}
