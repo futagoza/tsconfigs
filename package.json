@@ -1,0 +1,18 @@
+{
+    "publishConfig": {
+        "access": "public"
+    },
+    "name": "@futagoza/tsconfig",
+    "version": "1.0.0",
+    "description": "A collection of configs I use with TypeScript",
+    "keywords": [
+        "config",
+        "ts",
+        "tsconfig",
+        "typescript"
+    ],
+    "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
+    "repository": "futagoza/tsconfigs",
+    "main": "tsconfig.json",
+    "license": "MIT"
+}
