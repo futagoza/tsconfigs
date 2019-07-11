@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es2018"
+        ],
+        "target": "es2018",
+        "types": [
+            "node"
+        ]
+    }
+}
