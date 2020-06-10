@@ -15,7 +15,10 @@
     "repository": "futagoza/tsconfigs",
     "main": "tsconfig.json",
     "dependencies": {
-        "@types/node": "8"
+        "@types/node": "10"
+    },
+    "engines": {
+        "node": ">=10.0.0"
     },
     "license": "MIT"
 }
