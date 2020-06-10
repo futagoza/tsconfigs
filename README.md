@@ -65,7 +65,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 #### __`@futagoza/tsconfig/desktop`__
 
 - Extends `@futagoza/tsconfig`
-- Target ES2018
+- Target ES2019
 - Use UMD module generator
 
 ## license

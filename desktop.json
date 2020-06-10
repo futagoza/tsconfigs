@@ -5,10 +5,10 @@
         "lib": [
             "dom",
             "dom.iterable",
-            "es2018"
+            "es2019"
         ],
         "module": "umd",
-        "target": "es2018",
+        "target": "es2019",
         "types": [
             "node"
         ]
