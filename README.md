@@ -1,7 +1,7 @@
-> This package contains configuration files for TypeScript v3+<br>
+> This package contains configuration files for TypeScript v3.9+<br>
 > Require's [tslib](https://www.npmjs.com/package/tslib) as a dependency for outputted code.
 
-A collection of configuration files I use when working with TypeScript and targeting different JavaScript environments.
+A collection of configuration files I use with _[tsconfig.json](https://www.typescriptlang.org/v2/en/tsconfig)_ while working with TypeScript.
 
 ## installation
 
@@ -28,12 +28,21 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 - Use CommonJS module generator
 - Strict type checking
 - Resolve JSON files
-- Source maps for Emitted files
+- Enables source maps (with the original source included in the source maps)
 - Declaration files
-- Source maps for Declaration files
 - Always use Unix style (`lf`) new lines
 - Do not emit on errors
 - Always import helpers from tslib to avoid duplication of TypeScript helpers
+- Exclude's a number of directories that shouldn't contain `*.ts` source files
+- Includes commonly used directories for `*.ts` source files
+- Disable's automatic type acquisition
+- Allows importing `*.js` exports into `*.ts` files
+- Disables the `composite` option
+- Enables the `noFallthroughCasesInSwitch` option
+- Enables the `experimentalDecorators` option
+- Disables the `assumeChangesOnlyAffectDirectDependencies` option
+- Enforces consistent casing in filenames (when importing)
+- Does not emit declarations for code that has an `@internal` annotation
 
 #### __`@futagoza/tsconfig/browser`__
 

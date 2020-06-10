@@ -1,135 +1,170 @@
 {
 
-    /******************** Project ********************/
+    /******************** Root Fields ********************/
 
     "exclude": [
+        ".cache",
+        ".idea",
+        "build",
+        "bower_components",
         "dist",
+        "jspm_packages",
         "node_modules",
         "out",
-        "temp"
+        "temp",
+        "web_packages"
     ],
     "include": [
-        "src"
+        "lib/**/*",
+        "packages/**/*",
+        "src/**/*",
+        "tests/**/*",
     ],
+    "typeAcquisition": {
+        "enable": false,
+        "include": [],
+        "exclude": [],
+    },
 
     // "compileOnSave": false,
     // "extends": "",
     // "files": [],
     // "references": [],
-    // "typeAcquisition": {},
 
     "compilerOptions": {
 
-        /******************** Build ********************/
+        /******************** Project Options ********************/
 
+        "allowJs": true,
         "composite": false,
+        "declaration": true,
+        "declarationMap": true,
+        "importHelpers": true,
+        "incremental": false,
         "module": "commonjs",
+        "sourceMap": true,
         "target": "es2015",
 
+        // "checkJs": false,
+        // "downlevelIteration": false,
+        // "isolatedModules": false,
+        // "jsx": "preserve",
         // "lib": [],
-        // "noLib": false,
+        // "noEmit": false,
         // "outDir": "./",
         // "outFile": "./",
+        // "plugins": [],
+        // "removeComments": false,
         // "rootDir": "./",
+        // "tsBuildInfoFile": ".tsbuildinfo",
 
-        /******************** Type checking ********************/
+        /******************** Strict Checks ********************/
 
         "strict": true,
-        "suppressImplicitAnyIndexErrors": true,
 
-        // "noImplicitAny": true,
-        // "noImplicitThis": true,
-        // "noStrictGenericChecks": false,
-        // "skipLibCheck": false,
-        // "strictBindCallApply": true,
-        // "strictFunctionTypes": true,
-        // "strictNullChecks": true,
+        // -- The following defaults to `true` when `strict` is true
+        // "alwaysStrict": false,
+        // "noImplicitAny": false,
+        // "noImplicitThis": false,
+        // "strictBindCallApply": false,
+        // "strictFunctionTypes": false,
+        // "strictNullChecks": false,
+        // "strictPropertyInitialization": false,
+        // --
 
-        /******************** Best practices ********************/
+        /******************** Module Resolution ********************/
 
-        "noFallthroughCasesInSwitch": true,
-
-        // "allowUnreachableCode": false,
-        // "allowUnusedLabels": false,
-        // "forceConsistentCasingInFileNames": false,
-        // "noImplicitReturns": false,
-        // "noUnusedLocals": false,
-        // "noUnusedParameters": false,
-        // "strictPropertyInitialization": true,
-        // "suppressExcessPropertyErrors": false,
-
-        /******************** Module resolution ********************/
-
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
+        "moduleResolution": "node", // <---- deprecated
 
         // "allowSyntheticDefaultImports": false,
-        // "allowUmdGlobalAccess": true,
+        // "allowUmdGlobalAccess": false,
         // "baseUrl": "./",
         // "esModuleInterop": false,
-        // "maxNodeModuleJsDepth": 0,
         // "paths": {},
         // "preserveSymlinks": false,
         // "rootDirs": [],
         // "typeRoots": [],
         // "types": [],
 
-        /******************** Emit ********************/
+        /******************** Source Maps ********************/
 
-        "declaration": true,
-        "declarationMap": true,
-        "importHelpers": true,
-        "newLine": "lf",
-        "noEmitOnError": true,
-        "preserveConstEnums": true,
-        "stripInternal": true,
+        "inlineSources": true,
 
-        // "alwaysStrict": true,
-        // "declarationDir": "./",
-        // "emitBOM": false,
-        // "emitDeclarationOnly": false,
-        // "noEmit": false,
-        // "noEmitHelpers": false,
-        // "noImplicitUseStrict": false,
-        // "noResolve": false,
-        // "removeComments": false,
-
-        /******************** Source map ********************/
-
-        "sourceMap": true,
-
-        // "sourceRoot": "",
-        // "mapRoot": "",
         // "inlineSourceMap": false,
-        // "inlineSources": false,
+        // "mapRoot": "",
+        // "sourceRoot": "",
 
-        /******************** Compilation ********************/
+        /******************** Linter Checks ********************/
 
-        "disableSizeLimit": true,
-        "listEmittedFiles": true,
+        "noFallthroughCasesInSwitch": true,
 
-        // "diagnostics": false,
-        // "downlevelIteration": false,
-        // "incremental": false,
-        // "isolatedModules": false,
-        // "listFiles": false,
-        // "noErrorTruncation": false,
-        // "preserveWatchOutput": false,
-        // "pretty": true,
-        // "traceResolution": false,
-        // "tsBuildInfoFile": ".tsbuildinfo",
+        // "noImplicitReturns": false,
+        // "noUnusedLocals": false,
+        // "noUnusedParameters": false,
 
         /******************** Experimental ********************/
 
-        // "emitDecoratorMetadata": true,
-        // "experimentalDecorators": true,
+        "experimentalDecorators": true,
 
-        /******************** non-TypeScript ********************/
+        // "emitDecoratorMetadata": false,
 
-        // "allowJs": false,
-        // "checkJs": false,
-        // "jsx": "preserve",
+        /******************** Advanced ********************/
+
+        "assumeChangesOnlyAffectDirectDependencies": false,
+        "disableSizeLimit": true,
+        "forceConsistentCasingInFileNames": true,
+        "listEmittedFiles": true,
+        "newLine": "lf",
+        "noEmitOnError": true,
+        "preserveConstEnums": true,
+        "resolveJsonModule": true,
+        "stripInternal": true,
+
+        // "allowUnreachableCode": false,
+        // "allowUnusedLabels": false,
+        // "charset": "utf8", // <---- deprecated
+        // "declarationDir": "./",
+        // "diagnostics": false, // <---- deprecated
+        // "disableSolutionSearching": false,
+        // "disableSourceOfProjectReferenceRedirect": false,
+        // "emitBOM": false,
+        // "emitDeclarationOnly": false,
+        // "extendedDiagnostics": false,
+        // "generateCpuProfile": "profile.cpuprofile", // CLI-only option (e.g. `tsc --generateCpuProfile output.cpuprofile`)
+        // "importsNotUsedAsValues": "remove",
         // "jsxFactory": "React.createElement",
+        // "keyofStringsOnly": false, // <---- deprecated
+        // "listFiles": false,
+        // "maxNodeModuleJsDepth": 0,
+        // "noEmitHelpers": false,
+        // "noErrorTruncation": false, // <---- deprecated
+        // "noImplicitUseStrict": false,
+        // "noLib": false,
+        // "noResolve": false,
+        // "noStrictGenericChecks": false,
+        // "out": false, // <---- deprecated (use `outFile` instead)
+        // "reactNamespace": "React", // Use `jsxFactory` instead
+        // "skipDefaultLibCheck": false, // Use `skipLibCheck` instead
+        // "skipLibCheck": false,
+        // "suppressExcessPropertyErrors": false,
+        // "suppressImplicitAnyIndexErrors": false,
+        // "traceResolution": false,
+        // "useDefineForClassFields": false,
+
+        /******************** Command Line ********************/
+
+        // "preserveWatchOutput": false,
+        // "pretty": true,
+
+    },
+
+    "watchOptions": {
+
+        /******************** Command Line ********************/
+
+        // "fallbackPolling": false,
+        // "watchDirectory": "useFsEvents",
+        // "watchFile": "useFsEvents",
 
     }
 
