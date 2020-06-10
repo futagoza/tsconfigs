@@ -59,7 +59,8 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 #### __`@futagoza/tsconfig/node`__
 
 - Extends `@futagoza/tsconfig`
-- Target ES2017
+- Target ES2018
+- Use CommonJS module generator (inherited from `@futagoza/tsconfig`)
 
 #### __`@futagoza/tsconfig/desktop`__
 
