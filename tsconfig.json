@@ -48,7 +48,7 @@
         // "checkJs": false,
         // "downlevelIteration": false,
         // "isolatedModules": false,
-        // "jsx": "preserve",
+        // "jsx": "react",
         // "lib": [],
         // "noEmit": false,
         // "outDir": "./",
@@ -133,6 +133,7 @@
         // "generateCpuProfile": "profile.cpuprofile", // CLI-only option (e.g. `tsc --generateCpuProfile output.cpuprofile`)
         // "importsNotUsedAsValues": "remove",
         // "jsxFactory": "React.createElement",
+        // "jsxFragmentFactory": null,
         // "keyofStringsOnly": false, // <---- deprecated
         // "listFiles": false,
         // "maxNodeModuleJsDepth": 0,
