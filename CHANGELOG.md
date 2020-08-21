@@ -1,3 +1,9 @@
+## v2.1.0 _(21/08/2020)_
+
+* Update JSX options _(that are commented, so technically not in use)_
+* Enable the `esModuleInterop` and `skipLibCheck` options for a better development experience
+* Add ESNext based config at `@futagoza/tsconfig/dev`
+
 ## v2.0.0 _(10/06/2020)_
 
 * Drop support for Node 8 _(Hi Node 10)_
