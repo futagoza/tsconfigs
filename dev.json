@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext",
+            "scripthost",
+            "webworker"
+        ],
+        "module": "esnext",
+        "target": "esnext",
+        "types": [
+            "node"
+        ]
+    }
+}

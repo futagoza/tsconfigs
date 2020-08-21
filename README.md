@@ -70,6 +70,12 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 - Target ES2019
 - Use UMD module generator
 
+#### __`@futagoza/tsconfig/dev`__
+
+- Extends `@futagoza/tsconfig`
+- Target ESNext _(with library support for browsers, node and web-workers)_
+- Use ES module generator
+
 ## license
 
 Copyright © 2019+ Futago-za Ryuu<br>
