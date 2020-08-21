@@ -74,12 +74,12 @@
 
         /******************** Module Resolution ********************/
 
+        "esModuleInterop": true,
         "moduleResolution": "node", // <---- deprecated
 
-        // "allowSyntheticDefaultImports": false,
+        // "allowSyntheticDefaultImports": null,
         // "allowUmdGlobalAccess": false,
         // "baseUrl": "./",
-        // "esModuleInterop": false,
         // "paths": {},
         // "preserveSymlinks": false,
         // "rootDirs": [],

@@ -43,6 +43,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 - Disables the `assumeChangesOnlyAffectDirectDependencies` option
 - Enforces consistent casing in filenames (when importing)
 - Does not emit declarations for code that has an `@internal` annotation
+- Enables the `esModuleInterop` option
 
 #### __`@futagoza/tsconfig/browser`__
 
@@ -61,6 +62,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 - Extends `@futagoza/tsconfig`
 - Target ES2018
 - Use CommonJS module generator (inherited from `@futagoza/tsconfig`)
+- Enables the `skipLibCheck` option
 
 #### __`@futagoza/tsconfig/desktop`__
 
