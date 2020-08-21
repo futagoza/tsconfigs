@@ -1,7 +1,7 @@
 > This package contains configuration files for TypeScript v3.9+<br>
 > Require's [tslib](https://www.npmjs.com/package/tslib) as a dependency for outputted code.
 
-A collection of configuration files I use with _[tsconfig.json](https://www.typescriptlang.org/v2/en/tsconfig)_ while working with TypeScript.
+A collection of configuration files I use with _[tsconfig.json](https://www.typescriptlang.org/tsconfig)_ while working with TypeScript.
 
 ## installation
 

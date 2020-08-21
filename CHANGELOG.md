@@ -1,3 +1,7 @@
+## unreleased
+
+* Fix link to `tsconfig.json` docs
+
 ## v2.1.0 _(21/08/2020)_
 
 * Update JSX options _(that are commented, so technically not in use)_
