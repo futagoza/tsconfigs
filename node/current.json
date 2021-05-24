@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "extends": "./core.json",
+    "compilerOptions": {
+        "lib": [
+            "es2020"
+        ],
+        "target": "es2020"
+    }
+}
