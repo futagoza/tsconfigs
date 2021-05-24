@@ -1,6 +1,16 @@
-## unreleased
+## v3.0.0 _(25/05/2021)_
 
-* Fix link to `tsconfig.json` docs
+* Drop support for Node 10 _(Hi Node 12)_
+* Update base `tsconfig.json` with options from TypeScript _v4.0_ to _v4.3_ while enabling the following options:
+    - `disableFilenameBasedTypeAcquisition`
+    - `noImplicitOverride`
+    - `noUncheckedIndexedAccess`
+* Updated (while also restructuring) current configs
+* Added more configs (more configuration profiles for both the browser and node)
+* Updated base `README.md`
+    - Set requirement for TypeScript to v4.3
+    - Updated current config sections
+    - Added new config sections
 
 ## v2.1.0 _(21/08/2020)_
 
@@ -22,7 +32,7 @@
 * Enable the `forceConsistentCasingInFileNames` option
 * Disable the `suppressImplicitAnyIndexErrors` option (default value)
 * Fix some defaults specified in comments
-* Update and restructure base `tsconfig.json` in accordance to the [v2 docs](https://www.typescriptlang.org/v2/en/tsconfig)
+* Update and restructure base `tsconfig.json` using the [new `tsconfig` reference guide](https://www.typescriptlang.org/tsconfig)
 * Target ES2018 now when using `@futagoza/tsconfig/node`
 * Target ES2019 now when using `@futagoza/tsconfig/desktop`
 
