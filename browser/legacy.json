@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "downlevelIteration": true,
+        "lib": [
+            "dom",
+            "es5"
+        ],
+        "module": "umd",
+        "target": "es5"
+    }
+}
