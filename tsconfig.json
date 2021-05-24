@@ -21,6 +21,7 @@
         "tests/**/*",
     ],
     "typeAcquisition": {
+        "disableFilenameBasedTypeAcquisition": true,
         "enable": false,
         "include": [],
         "exclude": [],
@@ -97,9 +98,12 @@
         /******************** Linter Checks ********************/
 
         "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noUncheckedIndexedAccess": true,
 
         // "noImplicitReturns": false,
         // "noUnusedLocals": false,
+        // "noPropertyAccessFromIndexSignature": false,
         // "noUnusedParameters": false,
 
         /******************** Experimental ********************/
@@ -125,15 +129,18 @@
         // "charset": "utf8", // <---- deprecated
         // "declarationDir": "./",
         // "diagnostics": false, // <---- deprecated
+        // "disableReferencedProjectLoad": null,
         // "disableSolutionSearching": false,
         // "disableSourceOfProjectReferenceRedirect": false,
         // "emitBOM": false,
         // "emitDeclarationOnly": false,
+        // "explainFiles": null,
         // "extendedDiagnostics": false,
         // "generateCpuProfile": "profile.cpuprofile", // CLI-only option (e.g. `tsc --generateCpuProfile output.cpuprofile`)
         // "importsNotUsedAsValues": "remove",
         // "jsxFactory": "React.createElement",
         // "jsxFragmentFactory": null,
+        // "jsxImportSource": "react",
         // "keyofStringsOnly": false, // <---- deprecated
         // "listFiles": false,
         // "maxNodeModuleJsDepth": 0,
@@ -163,7 +170,10 @@
 
         /******************** Command Line ********************/
 
+        // "excludeDirectories": null,
+        // "excludeFiles": null,
         // "fallbackPolling": false,
+        // "synchronousWatchDirectory": null,
         // "watchDirectory": "useFsEvents",
         // "watchFile": "useFsEvents",
 
