@@ -22,6 +22,9 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 
 ## configurations
 
+> _ES2020 modules_ add support for [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import) and [`import.meta`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta)<br>
+> _ES2022 modules_ add support for [top level `await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await)
+
 #### `@futagoza/tsconfig` _(or `@futagoza/tsconfig/tsconfig.json`)_
 
 - Target ES2023
@@ -43,8 +46,8 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 #### `@futagoza/tsconfig/browser/evergreen.json`
 
 - Extends `@futagoza/tsconfig`
-- Target ES2020
-- Generate ES2020 modules _(ES2015 modules + dynamic imports + `import.meta` support)_
+- Target ES2025
+- Generate ES2022 modules
 
 #### `@futagoza/tsconfig/browser/legacy.json`
 
@@ -88,7 +91,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 #### `@futagoza/tsconfig/node/current.modules.json`
 
 - Extends `@futagoza/tsconfig/node/current.json`
-- Generate ES2020 modules _(ES2015 modules + dynamic imports + `import.meta` support)_
+- Generate ES2020 modules
 
 #### `@futagoza/tsconfig/desktop.json`
 
