@@ -1,10 +1,18 @@
 {
 
-    /******************** Root Fields ********************/
+    "$schema": "https://json.schemastore.org/tsconfig",
 
+    /******************** Root Fields | https://www.typescriptlang.org/tsconfig/#root-fields ********************/
+
+    // "files": [],
+    // "extends": "",
+    // "include": [],
     "exclude": [
         ".cache",
         ".idea",
+        ".git",
+        ".github",
+        ".temp",
         "build",
         "bower_components",
         "dist",
@@ -14,169 +22,189 @@
         "temp",
         "web_packages"
     ],
-    "include": [
-        "lib/**/*",
-        "packages/**/*",
-        "src/**/*",
-        "tests/**/*",
-    ],
-    "typeAcquisition": {
-        "disableFilenameBasedTypeAcquisition": true,
-        "enable": false,
-        "include": [],
-        "exclude": [],
-    },
-
-    // "compileOnSave": false,
-    // "extends": "",
-    // "files": [],
     // "references": [],
+
+    /******************** Compiler Options | https://www.typescriptlang.org/tsconfig/#compiler-options ********************/
 
     "compilerOptions": {
 
-        /******************** Project Options ********************/
+        /*-------------------- Type Checking --------------------*/
 
-        "allowJs": true,
-        "composite": false,
-        "declaration": true,
-        "declarationMap": true,
-        "importHelpers": true,
-        "incremental": false,
-        "module": "commonjs",
-        "sourceMap": true,
-        "target": "es2015",
-
-        // "checkJs": false,
-        // "downlevelIteration": false,
-        // "isolatedModules": false,
-        // "jsx": "react",
-        // "lib": [],
-        // "noEmit": false,
-        // "outDir": "./",
-        // "outFile": "./",
-        // "plugins": [],
-        // "removeComments": false,
-        // "rootDir": "./",
-        // "tsBuildInfoFile": ".tsbuildinfo",
-
-        /******************** Strict Checks ********************/
-
+        // "allowUnreachableCode": null,
+        // "allowUnusedLabels": null,
+        // "alwaysStrict": false, // <-- Defaults to `true` when `strict` is true
+        "exactOptionalPropertyTypes": false,
+        "noFallthroughCasesInSwitch": true,
+        // "noImplicitAny": false, // <-- Defaults to `true` when `strict` is true
+        "noImplicitOverride": true,
+        // "noImplicitReturns": false,
+        // "noImplicitThis": false, // <-- Defaults to `true` when `strict` is true
+        // "noPropertyAccessFromIndexSignature": false,
+        "noUncheckedIndexedAccess": true,
+        // "noUnusedLocals": false,
+        // "noUnusedParameters": false,
         "strict": true,
+        // "strictBindCallApply": false, // <-- Defaults to `true` when `strict` is true
+        // "strictBuiltinIteratorReturn": false, // <-- Defaults to `true` when `strict` is true
+        // "strictFunctionTypes": false, // <-- Defaults to `true` when `strict` is true
+        // "strictNullChecks": false, // <-- Defaults to `true` when `strict` is true
+        // "strictPropertyInitialization": false, // <-- Defaults to `true` when `strict` is true
+        // "useUnknownInCatchVariables": false, // <-- Defaults to `true` when `strict` is true
 
-        // -- The following defaults to `true` when `strict` is true
-        // "alwaysStrict": false,
-        // "noImplicitAny": false,
-        // "noImplicitThis": false,
-        // "strictBindCallApply": false,
-        // "strictFunctionTypes": false,
-        // "strictNullChecks": false,
-        // "strictPropertyInitialization": false,
-        // --
+        /*-------------------- Modules --------------------*/
 
-        /******************** Module Resolution ********************/
-
-        "esModuleInterop": true,
-        "moduleResolution": "node", // <---- deprecated
-
-        // "allowSyntheticDefaultImports": null,
+        "allowArbitraryExtensions": false,
+        "allowImportingTsExtensions": false,
         // "allowUmdGlobalAccess": false,
         // "baseUrl": "./",
+        // "customConditions": null,
+        "module": "ES2022",
+        "moduleResolution": "nodenext",
+        "moduleSuffixes": [ "" ],
+        // "noResolve": false,
+        "noUncheckedSideEffectImports": false,
         // "paths": {},
-        // "preserveSymlinks": false,
+        "resolveJsonModule": true,
+        // "resolvePackageJsonExports": false, // <-- Defaults to `true` when `moduleResolution` is node16, nodenext, or bundler
+        // "resolvePackageJsonImports": false, // <-- Defaults to `true` when `moduleResolution` is node16, nodenext, or bundler
+        "rewriteRelativeImportExtensions": true,
+        // "rootDir": "./",
         // "rootDirs": [],
         // "typeRoots": [],
         // "types": [],
 
-        /******************** Source Maps ********************/
+        /*-------------------- Emit --------------------*/
 
-        "inlineSources": true,
-
+        "declaration": true,
+        // "declarationDir": "./",
+        "declarationMap": true,
+        // "downlevelIteration": false,
+        // "emitBOM": false,
+        // "emitDeclarationOnly": false,
+        "importHelpers": true,
         // "inlineSourceMap": false,
+        "inlineSources": true,
         // "mapRoot": "",
-        // "sourceRoot": "",
-
-        /******************** Linter Checks ********************/
-
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitOverride": true,
-        "noUncheckedIndexedAccess": true,
-
-        // "noImplicitReturns": false,
-        // "noUnusedLocals": false,
-        // "noPropertyAccessFromIndexSignature": false,
-        // "noUnusedParameters": false,
-
-        /******************** Experimental ********************/
-
-        "experimentalDecorators": true,
-
-        // "emitDecoratorMetadata": false,
-
-        /******************** Advanced ********************/
-
-        "assumeChangesOnlyAffectDirectDependencies": false,
-        "disableSizeLimit": true,
-        "forceConsistentCasingInFileNames": true,
-        "listEmittedFiles": true,
         "newLine": "lf",
+        // "noEmit": false,
+        // "noEmitHelpers": false,
         "noEmitOnError": true,
+        // "outDir": "./",
+        // "outFile": "./",
         "preserveConstEnums": true,
-        "resolveJsonModule": true,
+        // "removeComments": false,
+        "sourceMap": true,
+        // "sourceRoot": "",
         "stripInternal": true,
 
-        // "allowUnreachableCode": false,
-        // "allowUnusedLabels": false,
+        /*-------------------- JavaScript Support --------------------*/
+
+        "allowJs": true,
+        // "checkJs": false,
+        // "maxNodeModuleJsDepth": 0,
+
+        /*-------------------- Editor Support --------------------*/
+
+        "disableSizeLimit": true,
+        // "plugins": [],
+
+        /*-------------------- Interop Constraints --------------------*/
+
+        // "allowSyntheticDefaultImports": null,
+        // "erasableSyntaxOnly": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        // "isolatedDeclarations": null,
+        // "isolatedModules": false,
+        // "preserveSymlinks": false,
+        "verbatimModuleSyntax": true,
+
+        /******************** Backwards Compatibility ********************/
+
         // "charset": "utf8", // <---- deprecated
-        // "declarationDir": "./",
+        // "importsNotUsedAsValues": "remove", // <---- deprecated
+        // "keyofStringsOnly": false, // <---- deprecated
+        // "noImplicitUseStrict": false,
+        // "noStrictGenericChecks": false,
+        // "out": false, // <---- deprecated (use `outFile` instead)
+        // "preserveValueImports": true, // <---- deprecated
+        // "suppressExcessPropertyErrors": false,
+        // "suppressImplicitAnyIndexErrors": false,
+
+        /******************** Language and Environment ********************/
+
+        // "emitDecoratorMetadata": false,
+        // "experimentalDecorators": false,
+        // "jsx": "react",
+        // "jsxFactory": "React.createElement",
+        // "jsxFragmentFactory": "React.Fragment",
+        // "jsxImportSource": "react",
+        // "lib": [],
+        "libReplacement": false,
+        "moduleDetection": "force",
+        // "noLib": false,
+        // "reactNamespace": "React", // Use `jsxFactory` instead
+        "target": "es2023",
+        // "useDefineForClassFields": false,
+
+        /******************** Compiler Diagnostics ********************/
+
         // "diagnostics": false, // <---- deprecated
+        // "explainFiles": null,
+        // "extendedDiagnostics": false,
+        // "generateCpuProfile": "profile.cpuprofile", // CLI-only option (e.g. `tsc --generateCpuProfile tsc-output.cpuprofile`)
+        // "generateTrace": false,
+        "listEmittedFiles": true,
+        // "listFiles": false,
+        // "noCheck": false,
+        // "traceResolution": false,
+
+        /******************** Projects ********************/
+
+        // "composite": false,
         // "disableReferencedProjectLoad": null,
         // "disableSolutionSearching": false,
         // "disableSourceOfProjectReferenceRedirect": false,
-        // "emitBOM": false,
-        // "emitDeclarationOnly": false,
-        // "explainFiles": null,
-        // "extendedDiagnostics": false,
-        // "generateCpuProfile": "profile.cpuprofile", // CLI-only option (e.g. `tsc --generateCpuProfile output.cpuprofile`)
-        // "importsNotUsedAsValues": "remove",
-        // "jsxFactory": "React.createElement",
-        // "jsxFragmentFactory": null,
-        // "jsxImportSource": "react",
-        // "keyofStringsOnly": false, // <---- deprecated
-        // "listFiles": false,
-        // "maxNodeModuleJsDepth": 0,
-        // "noEmitHelpers": false,
-        // "noErrorTruncation": false, // <---- deprecated
-        // "noImplicitUseStrict": false,
-        // "noLib": false,
-        // "noResolve": false,
-        // "noStrictGenericChecks": false,
-        // "out": false, // <---- deprecated (use `outFile` instead)
-        // "reactNamespace": "React", // Use `jsxFactory` instead
-        // "skipDefaultLibCheck": false, // Use `skipLibCheck` instead
-        // "skipLibCheck": false,
-        // "suppressExcessPropertyErrors": false,
-        // "suppressImplicitAnyIndexErrors": false,
-        // "traceResolution": false,
-        // "useDefineForClassFields": false,
+        // "incremental": false,
+        // "tsBuildInfoFile": ".tsbuildinfo",
 
-        /******************** Command Line ********************/
+        /******************** Output Formatting ********************/
 
+        // "noErrorTruncation": false,
         // "preserveWatchOutput": false,
         // "pretty": true,
 
+        /******************** Completeness ********************/
+
+        // "skipDefaultLibCheck": false, // Use `skipLibCheck` instead
+        // "skipLibCheck": false,
+
+        /******************** Watch Options (built-in to the lib maybe?) ********************/
+
+        // "assumeChangesOnlyAffectDirectDependencies": false,
+
     },
+
+    /******************** Watch Options | https://www.typescriptlang.org/tsconfig/#watchOptions ********************/
 
     "watchOptions": {
 
-        /******************** Command Line ********************/
-
+        // "watchFile": "useFsEvents",
+        // "watchDirectory": "useFsEvents",
+        // "fallbackPolling": null,
+        // "synchronousWatchDirectory": null,
         // "excludeDirectories": null,
         // "excludeFiles": null,
-        // "fallbackPolling": false,
-        // "synchronousWatchDirectory": null,
-        // "watchDirectory": "useFsEvents",
-        // "watchFile": "useFsEvents",
 
-    }
+    },
+
+    /******************** Type Acquisition | https://www.typescriptlang.org/tsconfig/#typeAcquisition ********************/
+
+    "typeAcquisition": {
+        "enable": false,
+        "include": [],
+        "exclude": [],
+        "disableFilenameBasedTypeAcquisition": true,
+    },
 
 }
