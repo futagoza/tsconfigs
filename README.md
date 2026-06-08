@@ -80,7 +80,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 #### `@futagoza/tsconfig/node/current.json`
 
 - Extends `@futagoza/tsconfig/node/core.json`
-- Target ES2020 (used in Node.js 16)
+- Target ES2025 (used in Node.js 24)
 
 #### `@futagoza/tsconfig/desktop.json`
 

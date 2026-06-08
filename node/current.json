@@ -3,8 +3,8 @@
     "extends": "./core.json",
     "compilerOptions": {
         "lib": [
-            "es2020"
+            "es2025"
         ],
-        "target": "es2020"
+        "target": "es2025"
     }
 }
