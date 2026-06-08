@@ -1,4 +1,4 @@
-> This package contains configuration files for TypeScript v4.3+<br>
+> This package contains configuration files for TypeScript v6+<br>
 > Require's [tslib](https://www.npmjs.com/package/tslib) as a dependency for outputted code.
 
 A collection of configuration files I use with _[tsconfig.json](https://www.typescriptlang.org/tsconfig)_ while working with TypeScript.
@@ -12,7 +12,7 @@ $ npm i tslib
 
 ## usage
 
-Put the following into your `tsconfig.json` (__hint:__ you can rename this file when using `tsc -p "custom name"`):
+Put the following into your `tsconfig.json` (__hint:__ you can use a different base config on the CLI: `tsc -p "custom name"`):
 
 ```json
 {
@@ -24,8 +24,8 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 
 #### `@futagoza/tsconfig` _(or `@futagoza/tsconfig/tsconfig.json`)_
 
-- Target ES2015
-- Use CommonJS module generator
+- Target ES2023
+- Generate ESM modules
 - Strict type checking
 - Resolve JSON files
 - Enables source maps (with the original source included in the source maps)
@@ -34,7 +34,6 @@ Put the following into your `tsconfig.json` (__hint:__ you can rename this file 
 - Do not emit on errors
 - Always import helpers from tslib to avoid duplication of TypeScript helpers
 - Exclude's a number of directories that shouldn't contain `*.ts` source files
-- Includes commonly used directories for `*.ts` source files
 - Disable's automatic type acquisition
 - Allows importing `*.js` exports into `*.ts` files
 - Enforces consistent casing in filenames (when importing)
