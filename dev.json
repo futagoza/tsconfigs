@@ -4,8 +4,8 @@
     "compilerOptions": {
         "jsx": "preserve",
         "lib": [
+            "decorators",
             "dom",
-            "dom.iterable",
             "esnext",
             "scripthost",
             "webworker"

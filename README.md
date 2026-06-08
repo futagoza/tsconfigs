@@ -92,7 +92,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 
 - Extends `@futagoza/tsconfig`
 - Target ESNext _(with library support for browsers, node and web-workers)_
-- Use ES module generator
+- Generate esnext modules
 
 ## license
 
