@@ -77,20 +77,10 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 - Extends `@futagoza/tsconfig/node/core.json`
 - Target ES2019 (used in Node.js 12)
 
-#### `@futagoza/tsconfig/node/lts.modules.json`
-
-- Extends `@futagoza/tsconfig/node/lts.json`
-- Generate ES2015 modules
-
 #### `@futagoza/tsconfig/node/current.json`
 
 - Extends `@futagoza/tsconfig/node/core.json`
 - Target ES2020 (used in Node.js 16)
-
-#### `@futagoza/tsconfig/node/current.modules.json`
-
-- Extends `@futagoza/tsconfig/node/current.json`
-- Generate ES2020 modules
 
 #### `@futagoza/tsconfig/desktop.json`
 
