@@ -63,7 +63,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 #### `@futagoza/tsconfig/webworker.json`
 
 - Extends `@futagoza/tsconfig`
-- Target ES2015
+- Target ES2020
 - Use _no_ module generator
 
 #### `@futagoza/tsconfig/node/core.json`
