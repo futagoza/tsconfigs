@@ -27,8 +27,8 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 
 #### `@futagoza/tsconfig` _(or `@futagoza/tsconfig/tsconfig.json`)_
 
-- Target ES2023
-- Generate ESM modules
+- Target ES2022 JavaScript output
+- Generate ES2022 modules
 - Strict type checking
 - Resolve JSON files
 - Enables source maps (with the original source included in the source maps)
@@ -47,7 +47,6 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 
 - Extends `@futagoza/tsconfig`
 - Target ES2025
-- Generate ES2022 modules
 
 #### `@futagoza/tsconfig/browser/legacy.json`
 

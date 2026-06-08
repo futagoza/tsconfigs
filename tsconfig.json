@@ -144,7 +144,7 @@
         "moduleDetection": "force",
         // "noLib": false,
         // "reactNamespace": "React", // Use `jsxFactory` instead
-        "target": "es2023",
+        "target": "es2022",
         // "useDefineForClassFields": false,
 
         /******************** Compiler Diagnostics ********************/
