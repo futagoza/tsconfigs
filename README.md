@@ -75,7 +75,7 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 #### `@futagoza/tsconfig/node.json` _(or `@futagoza/tsconfig/node/lts.json`)_
 
 - Extends `@futagoza/tsconfig/node/core.json`
-- Target ES2019 (used in Node.js 12)
+- Target ES2023 (used in Node.js 20)
 
 #### `@futagoza/tsconfig/node/current.json`
 
