@@ -1,3 +1,18 @@
+## v4.0.0 _(08/06/2026)_
+
+* Drop support for Node 12-19; Node 20 (and ES2023) is the target version in my projects right now
+* Restructure all options (and groups) in `tsconfig.json` to follow order of appearance on `https://www.typescriptlang.org/tsconfig/`
+* Update existing options in `tsconfig.json` (e.g. target ES2022) and add new options from TypeScript _v4.3_ to _v6.0_
+* `@futagoza/tsconfig/browser` now extends `@futagoza/tsconfig/browser/modern` which now targets _ES2020_
+* `@futagoza/tsconfig/browser/evergreen` now targets _ES2025_
+* `@futagoza/tsconfig/browser/webworker` now targets _ES2020_
+* Remove `@futagoza/tsconfig/node/*.modules` configs; due to switching to _ES2022 modules_ by default, these are now redundant
+* `@futagoza/tsconfig/node/lts` (and by extension `@futagoza/tsconfig/node`) now targets _ES2023_
+* `@futagoza/tsconfig/node/current` now targets _ES2025_
+* Remove _dom.iterable_ and add _decorators_ libs for `@futagoza/tsconfig/dev`
+* Updated base `README.md` to account for the recent changes
+* DEV: Update the root `$schema` property in each config to use `https` because VS Code now has trust issues with `http`
+
 ## v3.0.0 _(25/05/2021)_
 
 * Drop support for Node 10 _(Hi Node 12)_
