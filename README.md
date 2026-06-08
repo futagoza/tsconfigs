@@ -40,23 +40,23 @@ Put the following into your `tsconfig.json` (__hint:__ you can use a different b
 - Does not emit declarations for code that has an `@internal` annotation
 - Enable and disable options for my most common use cases
 
-#### `@futagoza/tsconfig/browser.json` _(or `@futagoza/tsconfig/browser/legacy.json`)_
-
-- Extends `@futagoza/tsconfig`
-- Target ES5
-- Generate UMD modules
-
 #### `@futagoza/tsconfig/browser/evergreen.json`
 
 - Extends `@futagoza/tsconfig`
 - Target ES2020
 - Generate ES2020 modules _(ES2015 modules + dynamic imports + `import.meta` support)_
 
-#### `@futagoza/tsconfig/browser/modern.json`
+#### `@futagoza/tsconfig/browser/legacy.json`
 
 - Extends `@futagoza/tsconfig`
-- Target ES2018
-- Generate ES2015 modules
+- Target ES5
+- Generate UMD modules
+
+#### `@futagoza/tsconfig/browser.json` _(or `@futagoza/tsconfig/browser/modern.json`)_
+
+- Extends `@futagoza/tsconfig`
+- Target ES2020
+- Generate ES2020 modules
 
 #### `@futagoza/tsconfig/webworker.json`
 
